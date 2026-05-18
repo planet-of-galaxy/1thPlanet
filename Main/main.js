@@ -1,25 +1,22 @@
-// 先加载背景图片，立即显示
 const $img = $('<img>', {
-  id: 'background-media',
+  id: 'background-img',
   src: 'Themes/废弃都市/picture.webp'
 });
 $('body').prepend($img);
 
-// 异步加载视频，初始隐藏
 const $video = $('<video>', {
   id: 'background-media',
-  src: 'Themes/废弃都市/video.mp4',
-  autoplay: true,
   loop: true,
-  muted: true,
   css: { display: 'none' }
 });
+$video[0].muted = true;
 
-// 视频加载完成后，替换图片为视频
+// 先绑定事件，再设置 src，确保不错过 canplaythrough
 $video.on('canplaythrough', () => {
   $img.remove();
   $video.css('display', 'block');
-  $('body').prepend($video);
 });
 
-$('body').append($video);
+$('body').prepend($video);
+$video[0].src = 'Themes/废弃都市/video.mp4';
+$video[0].play();
