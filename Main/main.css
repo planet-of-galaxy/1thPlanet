@@ -21,11 +21,12 @@ body {
 }
 
 #top {
-    height: 30px;
+    height: 50px;
 }
 
 #time-box {
     height: 100px;
+    width: 100%;
 }
 
 #search-box {
@@ -33,7 +34,7 @@ body {
 }
 
 #body {
-    min-height: calc(100vh - 240px);
+    min-height: calc(100vh - 260px);
 }
 
 #bottom {

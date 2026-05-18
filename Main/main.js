@@ -1,23 +1,25 @@
 // 先加载背景图片，立即显示
-const img = document.createElement('img');
-img.id = 'background-media';
-img.src = 'Themes/浮梦午憩/picture.webp';
-document.body.prepend(img);
+const $img = $('<img>', {
+  id: 'background-media',
+  src: 'Themes/废弃都市/picture.webp'
+});
+$('body').prepend($img);
 
 // 异步加载视频，初始隐藏
-const video = document.createElement('video');
-video.id = 'background-media';
-video.src = 'Themes/浮梦午憩/video.mp4';
-video.autoplay = true;
-video.loop = true;
-video.muted = true;
-video.style.display = 'none';
+const $video = $('<video>', {
+  id: 'background-media',
+  src: 'Themes/废弃都市/video.mp4',
+  autoplay: true,
+  loop: true,
+  muted: true,
+  css: { display: 'none' }
+});
 
 // 视频加载完成后，替换图片为视频
-video.oncanplaythrough = () => {
-  img.remove();
-  video.style.display = 'block';
-  document.body.prepend(video);
-};
+$video.on('canplaythrough', () => {
+  $img.remove();
+  $video.css('display', 'block');
+  $('body').prepend($video);
+});
 
-document.body.appendChild(video);
+$('body').append($video);
