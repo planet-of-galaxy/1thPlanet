@@ -13,4 +13,14 @@ $(document).ready(function() {
     $(document).click(function() {
         $('#addrLinkGroup').css('opacity', '0');
     });
+
+    $('#edit').click(function(e) {
+        e.stopPropagation();
+        console.log('按钮1被点击');
+    });
+
+    $('#help').click(function(e) {
+        e.stopPropagation();
+        console.log('按钮2被点击');
+    });
 });

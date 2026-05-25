@@ -14,3 +14,32 @@
     transition: opacity 0.5s ease;
     cursor: pointer;
 }
+
+.addr-btn {
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addr-btn:first-child {
+    margin-left: 15px;
+}
+
+.addr-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.addr-btn img {
+    width: 20px;
+    height: 20px;
+}
