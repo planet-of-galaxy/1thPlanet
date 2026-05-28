@@ -15,23 +15,30 @@
     cursor: pointer;
 }
 
+#addr-btn-row {
+    display: flex;
+    padding-left: 40px;
+    margin-bottom: 5px;
+}
+
+#addr-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    padding-top: 20px;
+}
+
 .addr-btn {
     height: 30px;
     width: 30px;
     background-color: transparent;
     border: none;
     margin-right: 10px;
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    float: left;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.addr-btn:first-child {
-    margin-left: 15px;
 }
 
 .addr-btn:hover {
@@ -42,4 +49,48 @@
 .addr-btn img {
     width: 20px;
     height: 20px;
+}
+
+.addr_link {
+    height: 60px;
+    width: 90px;
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 43px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link_name {
+    overflow-wrap: break-word;
+    line-height: 1.2;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.key {
+    display: none;
+}
+
+:root {
+    --hover-color: #88b8d8;
+}
+
+.addr_link:hover {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+    box-shadow: 0 0 10px var(--hover-color), 0 0 20px var(--hover-color);
+    text-shadow: 0 0 2px var(--hover-color), 0 0 2px var(--hover-color), 0 0 5px var(--hover-color);
 }
