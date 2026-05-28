@@ -1,0 +1,203 @@
+html,body {
+    background-color: rgb(255, 255, 255);
+    font-family: '宋体', 'Microsoft YaHei', sans-serif;
+    /* background-image: url("../素材/milky_way.png"); */
+    /* background-position: center top; 背景图居中对齐，顶部开始 */
+    /* background-size: cover; 背景图宽度自动和屏幕宽度一致 */
+}
+
+/* 顶部部分模块 */
+#body_top{
+    margin: 0;
+	padding: 5px;
+    width: 100%;
+    min-width: 800px;
+    /* background-color: red; */
+    height: 50px;
+}
+
+/* 中间部分模块 */
+#body_middle {
+    margin: 0;
+	padding: 5px;
+    display: flex;
+	flex-direction: row;
+    background-attachment:fixed;
+    /* background-color: forestgreen; */
+    height: 100%;
+	width: 100%;
+    min-width: 800px;
+}
+
+/* 中间偏左部分模块 */
+#middle_left {
+    flex: 1;
+}
+
+/* 中间的中间部分模块 */
+#middle_middle {
+    flex: 5;
+    padding: 10px;
+    background-color: white;
+    border: none; /* 设置边框样式和颜色 */
+    border-color: beige;
+    box-shadow: -10px -10px 10px rgb(194, 194, 194); /* 添加发光效果 */
+    border-radius: 10px;
+}
+
+/* 编辑按钮 */
+#edit {
+text-align: right;
+}
+
+#edit_kid {
+    /* display: none; */
+    margin-right: 30px;
+}
+
+/* 网站链接按钮 */
+.addr {
+    margin-right: 5px;
+    height: 40px;
+    width: 130px;
+    color: black;
+    justify-content: space-between; /* 将子元素均匀分布在两边 */
+    align-items: center; /* 垂直居中对齐 */
+    /* justify-content: center; */
+    align-items: center;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    float: left;
+    /* text-shadow: 0 0  10px #7b72f3,
+    0 0  20px #7b72f3,
+    0 0  40px #7b72f3,
+    0 0  80px #7b72f3; */
+}
+
+.select_addr {
+    margin-right: 5px;
+    height: 40px;
+    width: 130px;
+    color: black;
+    justify-content: space-between; /* 将子元素均匀分布在两边 */
+    align-items: center; /* 垂直居中对齐 */
+    /* justify-content: center; */
+    align-items: center;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    float: left;
+    /* text-shadow: 0 0  10px #7b72f3,
+    0 0  20px #7b72f3,
+    0 0  40px #7b72f3,
+    0 0  80px #7b72f3; */
+}
+
+.addr_name {
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#addr {
+    padding-left: 10px;
+    color: gray;
+}
+
+.web_class {
+    padding-left: 10px;
+    color: gray;
+}
+
+.addr_delete {
+    padding-right: 5px;
+}
+
+.myWeb_status {
+    margin-right: 5px;
+}
+
+.myWeb_status:hover .web_status{
+    width: 21px;
+}
+
+.myAddr_delete {
+    padding-right: 5px;
+}
+
+
+.addr_web {
+    display: none;
+}
+
+.addr_web_name {
+    display: none;
+}
+
+.delete_img {
+    width: 20px;
+}
+
+.web_status {
+    width: 20px;
+}
+
+#webAddress::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.selectWeb::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.addWeb_input {
+    width: 350px;
+}
+
+/* 中间偏右部分模块 */
+#middle_right {
+    flex: 1;
+}
+
+/* 底部部分模块 */
+#body_bottom{
+    margin: 0;
+	padding: 5px;
+    height: 30px;
+}
+
+/* 空白行 */
+.white_block {
+    height: 5px;
+}
+
+/* 测试模块 */
+.test_block {
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* 隐藏模块 */
+.hidden_block {
+    display: none;
+}
+
+/* h3标签 */
+h3 {
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}

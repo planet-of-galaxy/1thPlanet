@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- 常用模块 -->
+<!-- "插入空行" <div class="white_block"></div> -->
+<!-- "插入测试块" <div class="test_block"></div> -->
+
+<html>
+    <head>
+        <title>我的收藏</title>
+        <meta charset="utf-8">
+        <!-- <link rel="icon" href="https://i0.hdslb.com/bfs/static/jinkela/long/images/favicon.ico"> -->
+        <link rel="icon" href="../../Icon/star.png">
+        <link href="Collection.css" rel="stylesheet">
+        <script src="../../Plugin/jQuery/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="Collection.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="body_top">
+            <!-- 顶部部分模块 -->
+        </div>
+        <div id="body_middle">
+            <!-- 中间部分模块 -->
+            <div id="middle_left">
+                <!-- 中间偏左部分模块 -->
+            </div>
+            <div id="middle_middle">
+                <!-- 中间的中间部分模块 -->
+                <h3>添加新网址</h3>
+                <div id="addWeb">
+                    <span>网站名称:</span>
+                    <input id="addWeb_addressName" class="addWeb_input" placeholder='如： "百度"' type="text" name="addressName"/>
+                    <span>网址:</span>
+                    <input id="addWeb_webAddress" class="addWeb_input" placeholder='如： "https://www.baidu.com"' type="text" name="webAddress"/>
+                    <button id="addWebSubmit">添加</button>
+                </div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <div class="white_block"></div>
+                <h3>已添加的网址</h3>
+                <!-- <p id="edit"><span id="edit_kid">恢复</span></p> -->
+                <p id="addr">网址</p>
+                <div id="webAddress">
+                </div>
+                <div class="white_block"></div>
+                <h3>选择添加</h3>
+                <div id="selectWebContainer"></div>
+            </div>
+            <div id="middle_right">
+                    <!-- 中间偏右部分模块 -->
+            </div>
+        </div>
+        <div id="body_bottom">
+            <!-- 底部部分模块 -->
+        </div>
+    </body>
+</html>
