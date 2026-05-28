@@ -30,8 +30,9 @@ $(document).ready(function(){
         return false;
     })
 
-    $(".search-input").click(function(){
+    $(".search-input").click(function(e){
         $(this).css("width","250px");
+        e.stopPropagation();
     })
 
     $("#search4 #search-btn2").click(function(){
@@ -48,6 +49,12 @@ $(document).ready(function(){
 
     $("#restore").click(function() {
         restoreSearch();
+    })
+
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.search').length) {
+            restoreSearch();
+        }
     })
 
     function restoreSearch() {
