@@ -1,8 +1,5 @@
 #addrLinkGroup {
-    position: fixed;
-    top: calc(50% - 200px);
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 300px;
     min-width: 1000px;
     min-height: 80px;
     background-image: url("../../Image/Back_night.png");

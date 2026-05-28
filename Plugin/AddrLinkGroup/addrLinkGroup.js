@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     $('#edit').click(function(e) {
         e.stopPropagation();
-        console.log('按钮1被点击');
+        window.location.href = 'Page/Collection/Collection.html';
     });
 
     $('#help').click(function(e) {

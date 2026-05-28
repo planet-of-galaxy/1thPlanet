@@ -1,0 +1,90 @@
+/* search */
+.search {
+    height: 50px;
+    margin: 30px;
+    background: #ecf0f1;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-input {
+    background: none;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    color: #444693;
+    width: 0px;
+    transition: 0.5s;
+}
+.search-submit {
+    display: none;
+}
+.search .search-btn {
+    width: 30px;
+    height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+.search:hover .search-input{
+    width: 250px !important;
+}
+#search1.clicked #search-input1{
+    width: 250px !important;
+}
+#search2.clicked #search-input2{
+    width: 250px !important;
+}
+#search3.clicked #search-input3{
+    width: 250px !important;
+}
+#search1 .search-btn{
+    color: springgreen;
+}
+#search2 .search-btn{
+    color: royalblue;
+}
+#search3 .search-btn{
+    color: red;
+}
+
+/* 第二种搜索框 */
+#search-box2 {
+    display: flex;
+    justify-content: center
+}
+
+#search4 {
+    display: inline-flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    border-color: white;
+
+    box-shadow: 0 0 10px white;/* 添加发光效果 */
+}
+
+#search4:hover {
+    box-shadow: 0 0 10px white,
+                0 0 20px white; /* 添加发光效果 */
+}
+
+#search-submit1 {
+    padding: 8px;
+    height: 25px;
+}
+
+#search-input4 {
+    height: 30px;
+    width: 400px;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}

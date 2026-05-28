@@ -11,6 +11,10 @@
     <script src="Plugin/Time/time.js"></script>
     <link rel="stylesheet" href="Plugin/AddrLinkGroup/addrLinkGroup.css">
     <script src="Plugin/AddrLinkGroup/addrLinkGroup.js"></script>
+    <!-- SearchBox -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="Plugin/SearchBox/SearchBox.css" rel="stylesheet">
+    <script src="Plugin/SearchBox/SearchBox.js" charset="utf-8"></script>
 </head>
 <body>
     <div id="top"></div>
@@ -20,15 +24,40 @@
             <div id="week_context">XX月XX日 星期X</div>
         </div>
     </div>
-    <div id="search-box"></div>
-    <div id="body"></div>
-    <div id="bottom"></div>
-    <div id="addrLinkGroup">
-        <div id="addr-btn-row">
-            <div class="addr-btn" id="edit"><img src="Icon/edit.png" alt="edit"></div>
-            <div class="addr-btn" id="help"><img src="Icon/help.png" alt="help"></div>
-        </div>
+    <div id="search-box">
+        <div id="search-box">
+                <form id="search1" class="search">
+                    <input id="search-input1" class="search-input" type="text">
+                    <a href="" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input class="search-submit" type="submit">
+                </form>
+                <form id="search2" class="search">
+                    <input id="search-input2" class="search-input" type="text">
+                    <a href=""  class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input class="search-submit" type="submit">
+                </form>
+                <form id="search3" class="search">
+                    <input id="search-input3" class="search-input" type="text">
+                    <a href="" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input class="search-submit" type="submit">
+                </form>
+            </div>
+    </div>
+    <div id="body">
+        <div id="addrLinkGroup">
+            <div id="addr-btn-row">
+                <div class="addr-btn" id="edit"><img src="Icon/edit.png" alt="edit"></div>
+                <div class="addr-btn" id="help"><img src="Icon/help.png" alt="help"></div>
+            </div>
         <div id="addr-link-row"></div>
     </div>
+    </div>
+    <div id="bottom"></div>
 </body>
 </html>
