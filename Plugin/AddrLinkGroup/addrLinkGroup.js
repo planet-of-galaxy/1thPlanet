@@ -38,4 +38,10 @@ $(document).ready(function() {
         e.stopPropagation();
         console.log('按钮2被点击');
     });
+
+    // 主题按钮点击事件
+    $('#theme').click(function(e) {
+        e.stopPropagation();
+        window.location.href = 'Page/Theme/Theme.html';
+    });
 });
