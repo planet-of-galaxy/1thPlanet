@@ -4,61 +4,15 @@
     <title>主题选择</title>
     <meta charset="utf-8">
     <link rel="icon" type="image/png" href="../../Icon/color.png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 40px;
-            text-align: center;
-        }
-        h2 {
-            margin-bottom: 40px;
-        }
-        #theme-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .theme-item {
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .theme-item:hover {
-            transform: scale(1.05);
-        }
-        .theme-item img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        .theme-item p {
-            margin-top: 10px;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="Theme.css">
 </head>
 <body>
-    <h2>请选择你喜欢的主题</h2>
+    <h2>当前主题</h2>
+    <div id="current-theme"></div>
+
+    <h2>所有主题</h2>
     <div id="theme-container"></div>
 
-    <script>
-        fetch('Themes.json')
-            .then(res => res.json())
-            .then(themes => {
-                const container = document.getElementById('theme-container');
-                themes.forEach(theme => {
-                    const item = document.createElement('div');
-                    item.className = 'theme-item';
-                    item.innerHTML = `
-                        <img src="../../Themes/${theme.name}/picture.webp" alt="${theme.name}">
-                        <p>${theme.name}</p>
-                    `;
-                    item.onclick = () => console.log(theme.name);
-                    container.appendChild(item);
-                });
-            });
-    </script>
+    <script src="Theme.js"></script>
 </body>
 </html>
