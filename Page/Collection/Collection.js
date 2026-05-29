@@ -41,13 +41,17 @@ $(document).ready(function(){
         $('.myWeb_status').click(function(){
             var key = $(this).children(".addr_web").text();
             var value = $(this).children(".addr_web_name").text();
+            var $img = $(this).children('.web_status');
             if (selectedAddress.has(key)) {
                 selectedAddress.delete(key);
+                $img.attr('src', '../../Icon/more.png');
             } else {
                 selectedAddress.set(key, value);
+                $img.attr('src', '../../Icon/check_green.png');
             }
             localStorage.setItem("selectededWebAddress", JSON.stringify(Array.from(selectedAddress.entries())));
-            location.reload();
+            $('#webAddress').empty();
+            setWebAddress();
         });
     });
 
@@ -74,27 +78,30 @@ $(document).ready(function(){
         var webAddressAddr = $('input[name="webAddress"]').val();
         webAddress.set(webAddressAddr, addressName);
         localStorage.setItem("addedWebAddress", JSON.stringify(Array.from(webAddress.entries())));
-        location.reload();
+        $('#webAddress').empty();
+        setWebAddress();
+        $('input[name="addressName"]').val('');
+        $('input[name="webAddress"]').val('');
     });
 
     $(document).on('click', '.addr_delete', function(){
         var key = $(this).children('.addr_web').text();
         selectedAddress.delete(key);
         localStorage.setItem("selectededWebAddress", JSON.stringify(Array.from(selectedAddress.entries())));
-        location.reload();
+        $(this).closest('.addr').remove();
+        $('.myWeb_status').each(function() {
+            if ($(this).children('.addr_web').text() === key) {
+                $(this).children('.web_status').attr('src', '../../Icon/more.png');
+            }
+        });
     });
 
     $(document).on('click', '.myAddr_delete', function(){
         var key = $(this).children('.addr_web').text();
         webAddress.delete(key);
         localStorage.setItem("addedWebAddress", JSON.stringify(Array.from(webAddress.entries())));
-        location.reload();
+        $(this).closest('.addr').remove();
     });
-
-    $("#time_block").click(function(){ location.reload(); });
-    $("#middle_left").click(function(){ setHiddenBlockStatus(0, false); });
-    $("#middle_middle").click(function(){ setHiddenBlockStatus(0, true); });
-    $("#middle_right").click(function(){ setHiddenBlockStatus(0, false); });
 
     function setWebAddress() {
         webAddress.forEach(function(value, key) {
