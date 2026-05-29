@@ -16,17 +16,21 @@ $(document).ready(function() {
 
     $('#addrLinkGroup').click(function(e) {
         e.stopPropagation();
-        $(this).css('opacity', '1');
+        $(this).css({'opacity': '1', 'pointer-events': 'auto'});
     });
 
     $('#body').click(function(e) {
         e.stopPropagation();
         var currentOpacity = $('#addrLinkGroup').css('opacity');
-        $('#addrLinkGroup').css('opacity', currentOpacity === '1' ? '0' : '1');
+        if (currentOpacity === '1') {
+            $('#addrLinkGroup').css({'opacity': '0', 'pointer-events': 'none'});
+        } else {
+            $('#addrLinkGroup').css({'opacity': '1', 'pointer-events': 'auto'});
+        }
     });
 
     $(document).click(function() {
-        $('#addrLinkGroup').css('opacity', '0');
+        $('#addrLinkGroup').css({'opacity': '0', 'pointer-events': 'none'});
     });
 
     $('#edit').click(function(e) {
