@@ -17,7 +17,7 @@ function displayCurrentTheme(themeName, themes) {
     }
 }
 
-fetch('Themes.json')
+fetch('../../Themes/Themes.json')
     .then(res => res.json())
     .then(themes => {
         const container = document.getElementById('theme-container');
