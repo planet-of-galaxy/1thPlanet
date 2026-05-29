@@ -1,60 +1,28 @@
 [
+        {
+        "web_class": "工作",
+        "sites": [
+            { "addr_web_name": "figma", "addr_web": "https://www.figma.com/" },
+            { "addr_web_name": "多语言", "addr_web": "http://10.8.190.39:3050/" },
+            { "addr_web_name": "foxcode", "addr_web": "https://foxcode.rjj.cc/" }
+        ]
+    },
     {
         "web_class": "影视",
         "sites": [
-            { "addr_web_name": "腾讯视频", "addr_web": "https://v.qq.com/" },
             { "addr_web_name": "哔哩哔哩", "addr_web": "https://www.bilibili.com/" },
             { "addr_web_name": "爱奇艺", "addr_web": "https://www.iqiyi.com/" },
-            { "addr_web_name": "抖音", "addr_web": "https://www.douyin.com/" },
-            { "addr_web_name": "快手", "addr_web": "https://www.kuaishou.com/" },
-            { "addr_web_name": "西瓜视频", "addr_web": "https://www.ixigua.com/" },
-            { "addr_web_name": "芒果TV", "addr_web": "https://w.mgtv.com/" },
-            { "addr_web_name": "优酷", "addr_web": "https://www.youku.com/" },
-            { "addr_web_name": "央视网", "addr_web": "https://tv.cctv.com/" },
-            { "addr_web_name": "搜狐视频", "addr_web": "https://tv.sohu.com/" },
-            { "addr_web_name": "豆瓣电影", "addr_web": "https://movie.douban.com/" },
             { "addr_web_name": "虎牙直播", "addr_web": "https://www.huya.com/" },
             { "addr_web_name": "斗鱼直播", "addr_web": "https://www.douyu.com/" },
             { "addr_web_name": "YouTube", "addr_web": "https://www.youtube.com/" }
         ]
     },
     {
-        "web_class": "生活",
-        "sites": [
-            { "addr_web_name": "支付宝", "addr_web": "https://www.alipay.com/" },
-            { "addr_web_name": "大众点评", "addr_web": "https://www.dianping.com/" },
-            { "addr_web_name": "美团", "addr_web": "hhttps://www.meituan.com/" },
-            { "addr_web_name": "饿了么", "addr_web": "https://www.ele.me/" },
-            { "addr_web_name": "下厨房", "addr_web": "https://www.xiachufang.com/" },
-            { "addr_web_name": "房天下", "addr_web": "https://www1.fang.com/" },
-            { "addr_web_name": "安居客", "addr_web": "https://www.anjuke.com/" }
-        ]
-    },
-    {
         "web_class": "邮箱",
         "sites": [
             { "addr_web_name": "QQ邮箱", "addr_web": "https://mail.qq.com/" },
-            { "addr_web_name": "163邮箱", "addr_web": "https://email.163.com/" },
             { "addr_web_name": "Google邮箱", "addr_web": "https://mail.google.com/" },
-            { "addr_web_name": "新浪邮箱", "addr_web": "https://mail.sina.com.cn/" },
-            { "addr_web_name": "126邮箱", "addr_web": "https://mail.126.com/" },
-            { "addr_web_name": "139邮箱", "addr_web": "https://mail.10086.cn/" }
-        ]
-    },
-    {
-        "web_class": "通讯",
-        "sites": [
-            { "addr_web_name": "中国电信", "addr_web": "https://www.189.cn/" },
-            { "addr_web_name": "中国联通", "addr_web": "https://www.10010.com/" },
-            { "addr_web_name": "中国移动", "addr_web": "https://www.10086.cn/" }
-        ]
-    },
-    {
-        "web_class": "搜索",
-        "sites": [
-            { "addr_web_name": "百度", "addr_web": "https://www.baidu.com/" },
-            { "addr_web_name": "谷歌", "addr_web": "https://www.google.com/" },
-            { "addr_web_name": "必应", "addr_web": "https://www.bing.com/" }
+            { "addr_web_name": "阿里邮箱", "addr_web": "https://qiye.aliyun.com/" }
         ]
     },
     {
@@ -71,16 +39,6 @@
         ]
     },
     {
-        "web_class": "音声",
-        "sites": [
-            { "addr_web_name": "网易云", "addr_web": "https://music.163.com/" },
-            { "addr_web_name": "qq音乐", "addr_web": "https://y.qq.com/" },
-            { "addr_web_name": "咪咕音乐", "addr_web": "https://music.migu.cn/" },
-            { "addr_web_name": "千千音乐", "addr_web": "https://music.taihe.com/" },
-            { "addr_web_name": "YT music", "addr_web": "https://music.youtube.com/" }
-        ]
-    },
-    {
         "web_class": "翻译",
         "sites": [
             { "addr_web_name": "百度翻译", "addr_web": "https://fanyi.baidu.com/" },
@@ -89,24 +47,13 @@
         ]
     },
     {
-        "web_class": "新闻",
-        "sites": [
-            { "addr_web_name": "今日头条", "addr_web": "https://www.toutiao.com/" },
-            { "addr_web_name": "网易新闻", "addr_web": "https://news.163.com/" },
-            { "addr_web_name": "人民网", "addr_web": "http://www.people.com.cn/" },
-            { "addr_web_name": "中国新闻网", "addr_web": "https://www.chinanews.com.cn/" },
-            { "addr_web_name": "凤凰军事", "addr_web": "https://mil.ifeng.com/" },
-            { "addr_web_name": "环球网", "addr_web": "https://www.huanqiu.com/" },
-            { "addr_web_name": "新浪新闻", "addr_web": "https://news.sina.com.cn/" }
-        ]
-    },
-    {
         "web_class": "AI",
         "sites": [
             { "addr_web_name": "deepseek", "addr_web": "https://chat.deepseek.com/" },
             { "addr_web_name": "ChatGPT", "addr_web": "https://chatgpt.com/" },
             { "addr_web_name": "openAI", "addr_web": "https://openai.com/" },
-            { "addr_web_name": "豆包", "addr_web": "https://www.doubao.com/" }
+            { "addr_web_name": "豆包", "addr_web": "https://www.doubao.com/" },
+            { "addr_web_name": "Meshy", "addr_web": "https://www.meshy.ai/zh/discover/" } 
         ]
     },
     {
@@ -137,16 +84,13 @@
             { "addr_web_name": "牛客网", "addr_web": "https://www.nowcoder.com/" },
             { "addr_web_name": "摹客", "addr_web": "https://rp.mockplus.cn/" },
             { "addr_web_name": "弹琴吧", "addr_web": "https://www.tan8.com/" },
-            { "addr_web_name": "沪江网", "addr_web": "https://www.hujiang.com/" },
-            { "addr_web_name": "开源中国", "addr_web": "https://www.oschina.net/" },
             { "addr_web_name": "学信网", "addr_web": "https://www.chsi.com.cn/" }
         ]
     },
     {
         "web_class": "游戏",
         "sites": [
-            { "addr_web_name": "4399", "addr_web": "https://www.4399.com/" },
-            { "addr_web_name": "7k7k", "addr_web": "https://www.7k7k.com/" },
+             { "addr_web_name": "帝国时代", "addr_web": "https://www.aoe4world.com/" },
             { "addr_web_name": "3DM游戏", "addr_web": "https://www.3dmgame.com/" },
             { "addr_web_name": "3DM MOD站", "addr_web": "https://mod.3dmgame.com/" },
             { "addr_web_name": "NEXUS MODS", "addr_web": "https://www.nexusmods.com/" }
@@ -167,54 +111,6 @@
             { "addr_web_name": "淘宝", "addr_web": "https://www.taobao.com/" },
             { "addr_web_name": "天猫", "addr_web": "https://www.tmall.com/" },
             { "addr_web_name": "京东", "addr_web": "https://www.jd.com/" }
-        ]
-    },
-    {
-        "web_class": "出行",
-        "sites": [
-            { "addr_web_name": "12306", "addr_web": "https://www.12306.cn/" },
-            { "addr_web_name": "携程旅行", "addr_web": "https://www.ctrip.com/" },
-            { "addr_web_name": "飞猪旅行", "addr_web": "https://www.fliggy.com/" },
-            { "addr_web_name": "马蜂窝", "addr_web": "https://www.mafengwo.cn/" },
-            { "addr_web_name": "途牛", "addr_web": "https://www.tuniu.com/" }
-        ]
-    },
-    {
-        "web_class": "招聘",
-        "sites": [
-            { "addr_web_name": "Boss直聘", "addr_web": "https://www.zhipin.com/" },
-            { "addr_web_name": "前程无忧", "addr_web": "https://www.51job.com/" },
-            { "addr_web_name": "猎聘", "addr_web": "https://www.liepin.com/" },
-            { "addr_web_name": "高校人才网", "addr_web": "https://www.gaoxiaojob.com/" },
-            { "addr_web_name": "拉钩招聘", "addr_web": "https://www.lagou.com/" }
-        ]
-    },
-    {
-        "web_class": "汽车",
-        "sites": [
-            { "addr_web_name": "有驾", "addr_web": "https://www.yoojia.com/" },
-            { "addr_web_name": "太平洋汽车", "addr_web": "https://www.pcauto.com.cn/" },
-            { "addr_web_name": "易车", "addr_web": "https://www.yiche.com/" },
-            { "addr_web_name": "汽车之家", "addr_web": "https://www.autohome.com.cn/" }
-        ]
-    },
-    {
-        "web_class": "股票",
-        "sites": [
-            { "addr_web_name": "股吧", "addr_web": "https://guba.eastmoney.com/" },
-            { "addr_web_name": "同花顺", "addr_web": "https://www.10jqka.com.cn/" },
-            { "addr_web_name": "东方财富", "addr_web": "https://www.eastmoney.com/" },
-            { "addr_web_name": "雪球", "addr_web": "https://xueqiu.com/" }
-        ]
-    },
-    {
-        "web_class": "彩票",
-        "sites": [
-            { "addr_web_name": "竞彩网", "addr_web": "https://www.sporttery.cn/" },
-            { "addr_web_name": "中国福彩", "addr_web": "https://www.cwl.gov.cn/" },
-            { "addr_web_name": "中国体彩", "addr_web": "https://www.lottery.gov.cn/" },
-            { "addr_web_name": "新浪彩票", "addr_web": "https://lottery.sina.com.cn/" },
-            { "addr_web_name": "中彩网", "addr_web": "https://www.zhcw.com/" }
         ]
     }
 ]
