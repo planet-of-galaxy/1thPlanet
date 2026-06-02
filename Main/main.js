@@ -3,10 +3,16 @@ $.getJSON('Themes/Themes.json', (themes) => {
   // 从 localStorage 读取当前主题
   const savedTheme = localStorage.getItem('selectedTheme');
   // 验证主题是否存在，不存在则使用默认主题"废弃都市"
-  const theme = (savedTheme && themes.some(t => t.name === savedTheme)) ? savedTheme : '废弃都市';
+  let theme = (savedTheme && themes.some(t => t.name === savedTheme)) ? savedTheme : '废弃都市';
   // 如果没有保存过主题，保存默认主题
   if (!savedTheme) {
     localStorage.setItem('selectedTheme', theme);
+  }
+
+  // 如果选择了 Random，则随机选择一个非 Random 主题
+  if (theme === 'Random') {
+    const nonRandomThemes = themes.filter(t => t.name !== 'Random');
+    theme = nonRandomThemes[Math.floor(Math.random() * nonRandomThemes.length)].name;
   }
 
   // 创建背景图片元素

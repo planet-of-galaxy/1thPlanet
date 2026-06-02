@@ -1,5 +1,9 @@
 [
     {
+        "name": "Random",
+        "style": "light"
+    },
+    {
         "name": "废弃都市",
         "style": "dark"
     },
