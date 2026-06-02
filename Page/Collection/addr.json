@@ -5,7 +5,8 @@
             { "addr_web_name": "figma", "addr_web": "https://www.figma.com/" },
             { "addr_web_name": "多语言", "addr_web": "http://10.8.190.39:3050/" },
             { "addr_web_name": "foxcode", "addr_web": "https://foxcode.rjj.cc/" },
-            { "addr_web_name": "Teambition", "addr_web": "https://tb.orbbec.com/" }
+            { "addr_web_name": "Teambition", "addr_web": "https://tb.orbbec.com/" },
+            { "addr_web_name": "GitLab", "addr_web": "https://code.orbbec.com.cn/" }
         ]
     },
     {
