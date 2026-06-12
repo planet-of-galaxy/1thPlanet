@@ -56,7 +56,8 @@
             { "addr_web_name": "openAI", "addr_web": "https://openai.com/" },
             { "addr_web_name": "豆包", "addr_web": "https://www.doubao.com/" },
             { "addr_web_name": "Meshy", "addr_web": "https://www.meshy.ai/zh/discover/" },
-            { "addr_web_name": "Marvis", "addr_web": "https://marvis.qq.com/" }
+            { "addr_web_name": "Marvis", "addr_web": "https://marvis.qq.com/" },
+            { "addr_web_name": "DS API", "addr_web": "https://platform.deepseek.com/usage" }
         ]
     },
     {
