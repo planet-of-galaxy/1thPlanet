@@ -103,6 +103,12 @@ $(document).ready(function(){
         $(this).closest('.addr').remove();
     });
 
+    // 点击网址名称跳转：处理两种DOM结构（已添加的网址用 .myAddr_delete/.addr_delete，选择添加用 .myWeb_status）
+    $(document).on('click', '.addr_name', function(){
+        var url = $(this).siblings('.myAddr_delete, .addr_delete').children('.addr_web').text() || $(this).siblings('.myWeb_status').children('.addr_web').text();
+        if (url) window.open(url, '_blank');
+    });
+
     function setWebAddress() {
         webAddress.forEach(function(value, key) {
             var display = value.length > 10 ? value.substring(0, 9) + ".." : value;
