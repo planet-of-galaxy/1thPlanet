@@ -97,7 +97,8 @@
              { "addr_web_name": "帝国时代", "addr_web": "https://www.aoe4world.com/" },
             { "addr_web_name": "3DM游戏", "addr_web": "https://www.3dmgame.com/" },
             { "addr_web_name": "3DM MOD站", "addr_web": "https://mod.3dmgame.com/" },
-            { "addr_web_name": "NEXUS MODS", "addr_web": "https://www.nexusmods.com/" }
+            { "addr_web_name": "NEXUS MODS", "addr_web": "https://www.nexusmods.com/" },
+            { "addr_web_name": "Ayakamods", "addr_web": "https://ayakamods.com/" }
         ]
     },
     {
