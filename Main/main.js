@@ -22,6 +22,12 @@ $.getJSON('Themes/Themes.json', (themes) => {
   });
   $('body').prepend($img);
 
+  // 没有视频的主题（如"星河入梦"）只显示背景图片
+  const themeConfig = themes.find(t => t.name === theme);
+  if (themeConfig && themeConfig.video === false) {
+    return;
+  }
+
   // 创建背景视频元素
   const $video = $('<video>', {
     id: 'background-media',

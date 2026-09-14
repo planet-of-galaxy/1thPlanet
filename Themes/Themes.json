@@ -4,6 +4,11 @@
         "style": "light"
     },
     {
+        "name": "星河入梦",
+        "style": "dark",
+        "video": false
+    },
+    {
         "name": "废弃都市",
         "style": "dark"
     },
