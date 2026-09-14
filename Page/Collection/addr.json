@@ -105,6 +105,7 @@
         "web_class": "资源",
         "sites": [
             { "addr_web_name": "github", "addr_web": "https://github.com/" },
+            { "addr_web_name": "腾讯云", "addr_web": "https://edgeone.cloud.tencent.com/pages" },
             { "addr_web_name": "cubebrush", "addr_web": "https://cubebrush.co/" },
             { "addr_web_name": "flaticon", "addr_web": "https://www.flaticon.com/" },
             { "addr_web_name": "C站", "addr_web": "https://civitai.com/" },
