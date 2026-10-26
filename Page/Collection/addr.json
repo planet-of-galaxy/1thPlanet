@@ -12,6 +12,7 @@
     {
         "web_class": "影视",
         "sites": [
+            { "addr_web_name": "抖音", "addr_web": "https://www.douyin.com/" },
             { "addr_web_name": "哔哩哔哩", "addr_web": "https://www.bilibili.com/" },
             { "addr_web_name": "爱奇艺", "addr_web": "https://www.iqiyi.com/" },
             { "addr_web_name": "虎牙直播", "addr_web": "https://www.huya.com/" },
